@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="auth.js" defer></script>
+</head>
+<body id="admin-dashboard">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="School Logo">
+        </div>
+  <h2>Mwala vocational technical college Admin Portal </h2>
+  <a href="students.html">Students</a>
+  <button class="logout" id="logout">Logout</button>
+</div>
+
+        <section class="card">
+            <h2>Post Announcements</h2>
+            <form id="announcement-form">
+                <input type="text" id="announcement-title" placeholder="Title" required>
+                <textarea id="announcement-message" placeholder="Message" required></textarea>
+                <input type="file" id="announcement-image" accept="image/*">
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+    
+        <section class="card">
+            <h2>Upload Timetable (PDF)</h2>
+            <form id="timetable-form">
+                <input type="file" id="timetable-file" accept="application/pdf" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </div>
+
+
+<h2>Post News</h2>
+<form id="news-form">
+            <input type="text" id="news-title" placeholder="News Title">
+            <textarea id="news-content" placeholder="Write your news..."></textarea>
+            <input type="file" id="news-image" accept="image/*">
+    <button type="submit">Post News</button>
+</form>
+
+<h2>All Announcements</h2>
+<div id="admin-news-container">
+</div>
+
+<script src="news.js"></script>
+<script src="admin.js"></script>
+<footer class="footer">
+    <p>&copy; 2025 Mwala technical & vocational College Admin. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

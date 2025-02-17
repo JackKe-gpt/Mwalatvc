@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="auth.js" defer></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="School Logo">
+        </div>
+  <h2>Mwala vocational technical college Admin Portal </h2>
+  <a href="adashboard.html">Back to dashboard</a>
+  <button class="logout" id="logout">Logout</button>
+</div>
+
+    <h2>Manage Students</h2>
+<table border="5">
+    <thead>
+        <tr>
+            <th>Full NAmes</th>
+            <th>Username</th>
+            <th>Admission No</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="student-list">
+        <!-- Student data will be dynamically inserted here -->
+    </tbody>
+</table>
+
+<script src="admin.js"></script> <!-- Link to admin management script -->
+<footer class="footer">
+    <p>&copy; 2025 Mwala technical & vocational College Admin. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Banner */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+/* Sections */
+.announcements, .quick-links {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.announcements h2, .quick-links h2 {
+    margin-bottom: 10px;
+}
+
+.announcements ul, .quick-links ul {
+    list-style: none;
+}
+
+.announcements ul li, .quick-links ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+/* About Page */
+.about, .history-mission, .leadership, .accreditations, .campus-tour {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.about h1, .history-mission h2, .leadership h2, .accreditations h2, .campus-tour h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.leadership ul {
+    list-style: none;
+}
+
+.leadership ul li {
+    margin-bottom: 8px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+/* Academics Page */
+.academics, .departments, .faculty, .calendar, .library {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.academics h1, .departments h2, .faculty h2, .calendar h2, .library h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.departments ul, .faculty ul, .calendar ul {
+    list-style: none;
+}
+
+.departments ul li, .faculty ul li, .calendar ul li {
+    margin-bottom: 8px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 45%;
+    border-radius: 5px;
+}
+
+/* Admissions Page */
+.admissions, .process, .eligibility, .fees, .application {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.admissions h1, .process h2, .eligibility h2, .fees h2, .application h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.process ol, .eligibility ul {
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+}
+
+/* Login Page */
+.login {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.login h1 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+form {
+    display: relative;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+input, button {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #26be00;
+    color: rgb(12, 16, 238);
+    cursor: pointer;
+}
+
+/* Registration Page */
+.register {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.register h1 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input, button {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dashboard Page */
+.dashboard {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.dashboard h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.dashboard-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile, .courses, .announcements {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: left;
+}
+
+.profile h2, .courses h2, .announcements h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.announcements ul, .courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.announcements li, .courses li {
+    margin-bottom: 8px;
+}
+
+.logout {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+/* Admin Login Page */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.admin-dashboard h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.dashboard-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.card h2 {
+    color: #004080;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #004080;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Manage Students Page */
+.manage-students {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+.manage-students h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+}
+
+.edit {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit:hover, .delete:hover {
+    opacity: 0.8;
+}
+
+.container {
+  background: green;
+  align-items: center;
+  position: center;
+  text-align: center;
+  height: 300px;
+  margin-top: 100px;
+  width: 300px;
+  margin-left: 30px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Students | Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">College Name - Admin Panel</div>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="manage_students.html">Manage Students</a></li>
+                <li><a href="manage_candidates.html">Manage Candidates</a></li>
+                <li><a href="voting_progress.html">Voting Progress</a></li>
+                <li><a href="generate_reports.html">Generate Reports</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Manage Students Section -->
+    <section class="manage-students">
+        <h1>Manage Registered Students</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search by name or admission number..." onkeyup="searchStudents()">
+
+        <!-- Students Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Admission Number</th>
+                    <th>Full Name</th>
+                    <th>Username</th>
+                    <th>Course</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+                <tr>
+                    <td>2025001</td>
+                    <td>John Doe</td>
+                    <td>johndoe</td>
+                    <td>BSc Computer Science</td>
+                    <td>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2025002</td>
+                    <td>Jane Smith</td>
+                    <td>janesmith</td>
+                    <td>BBA Business Administration</td>
+                    <td>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 College Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function searchStudents() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let table = document.getElementById("student-list");
+            let rows = table.getElementsByTagName("tr");
+
+            for (let i = 0; i < rows.length; i++) {
+                let name = rows[i].getElementsByTagName("td")[1];
+                let admission = rows[i].getElementsByTagName("td")[0];
+
+                if (name && admission) {
+                    let nameText = name.textContent.toLowerCase();
+                    let admissionText = admission.textContent.toLowerCase();
+
+                    if (nameText.includes(input) || admissionText.includes(input)) {
+                        rows[i].style.display = "";
+                    } else {
+                        rows[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #2f5ec4;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+header h1 {
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Side Navigation */
+.side-nav {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #0055A4;
+    padding-top: 20px;
+    transition: 1s;
+}
+.side-nav.open {
+    left: 0;
+}
+.side-nav .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    justify-items: left;
+    
+}
+.side-nav ul li {
+    padding: 5px;
+}
+.side-nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    background: none;
+    font-size: 20px;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border-bottom: 2px solid #222;
+}
+.side-nav ul li a:hover {
+    background: rgb(47, 96, 231);
+    color: black;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    background: whitesmoke;
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 5px;
+    color: green;
+}
+.dropdown-menu li {
+    padding: 10px;
+    background: none
+}
+.dropdown-menu li a {
+    color: white;
+    background: none;
+}
+.dropdown-menu li a:hover {
+    background: white;
+    color: #0055A4;
+}
+
+/* Show Dropdown on Click */
+.dropdown.open .dropdown-menu {
+    display: block;
+}
+
+
+footer {
+    background: linear-gradient(90deg, rgb(0, 153, 255), rgb(157, 255, 0), rgb(2, 211, 2));
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* News Feed Styling */
+#news-container {
+    width: 95%;
+    margin: auto;
+}
+
+.news-item {
+    background: #f5f3f3;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 24, 236, 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.news-item h3 {
+    margin: 0;
+    color: #1b1b1b;
+}
+
+.news-item p {
+    color: #555;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.news-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.news-actions input {
+    background: green;
+}
+.news-actions button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid rgb(87, 85, 85);
+    border-radius: 3px;
+}
+
+.news-actions button:hover {
+    text-decoration: underline;
+    color: rgb(3, 189, 18);
+    background-color: #c7c3c3;
+    margin-left: 0px;
+}
+
+.like-btn.liked {
+    background-color: yellow;
+    color: white;
+}
+
+.container {
+    width: 97%;
+    height: 500px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-image: url(school.jpg);
+    background-repeat: round;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    image-resolution: 100%;
+    border-radius: 5px;
+}
+
+#b1 {
+    padding: 20px 15px;
+    border-radius: 6px;
+    background: rgb(230, 226, 39);
+    border: none;
+    font-weight: bold;
+}
+
+#b1:hover {
+    opacity: 0.8;
+    background: rgb(240, 237, 83);
+    font-size: 40px;
+    border-radius: 20px;
+}
